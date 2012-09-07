@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+<LinearLayout 
+    android:layout_width="fill_parent"
+	android:layout_height="@dimen/button_height"
+	android:orientation="horizontal"
+	android:gravity="center_horizontal">
+	<Button
+		android:id="@+id/StartButton"
+		android:background="@layout/rounded"
+		android:padding="@dimen/padding"
+		android:text="@string/start_button"
+		android:onClick="startButtonAdd"
+    	android:layout_width="wrap_content" 
+   		android:layout_height="fill_parent"
+      	android:textSize="@dimen/button_size">
+   	</Button>
+   	<TextView
+   		android:id="@+id/DistanceTitle"
+   		android:gravity="center_vertical"
+   		android:text="@string/DistanceText"
+   		android:paddingLeft="@dimen/padding"
+   		android:layout_width="wrap_content"
+   		android:layout_height="fill_parent"
+   		android:textColor="@color/yellow"
+   		android:textSize="@dimen/text_size">
+   	</TextView>
+   	<TextView
+   		android:id="@+id/DistanceValue"
+   		android:gravity="center_vertical"
+   		android:text="@string/DistanceValue"
+   		android:paddingLeft="@dimen/padding"
+   		android:layout_width="wrap_content"
+   		android:layout_height="fill_parent"
+   		android:textColor="@color/yellow"
+   		android:textSize="@dimen/text_size"
+   		>
+   	</TextView>
+   	
+</LinearLayout>
+	<com.google.android.maps.MapView
+		xmlns:android="http://schemas.android.com/apk/res/android"		
+		android:id="@+id/geoMap" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:clickable="true"
+		android:enabled="true"
+		android:apiKey="0MoNhuQeWcHHQuLdg9BqYDYaJP4L-EZGqfqo97Q"
+		/>
+
+</LinearLayout>

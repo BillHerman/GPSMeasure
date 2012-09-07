@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GPS Measure</string>
+    <string name="start_button">MARK</string>
+    <string name="DistanceText">Distance = "</string>
+    <string name="DistanceValue">0</string>
+</resources>
